@@ -51,7 +51,7 @@ class DefaultNotificationHelper: NotificationHelper {
 
     static let pinnedCredentialValidationFailed = NSNotification.Name("pinnedCredentialValidationFailed")
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
 
 #if swift(>=4.2)
     static let didEnterBgNotification = UIApplication.didEnterBackgroundNotification
